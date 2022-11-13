@@ -6,12 +6,12 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <Router basename={'/Virtualbank'}>
+    <Router>
       <Navbar/>
 
       <Routes>
-        <Route exact path="/Virtualbank" element={<Home/>} />
-        <Route exact path="/Virtualbank/Signin" element={<Signin/>} />
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/Signin" element={<Signin/>} />
       </Routes>
     </Router>
   );
